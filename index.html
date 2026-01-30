@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - AutoWildcard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fafafa;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        header {
+            background: #FF6B35;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            margin: -20px -20px 30px -20px;
+        }
+        
+        h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        
+        h2 {
+            color: #FF6B35;
+            font-size: 22px;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #FF6B35;
+        }
+        
+        h3 {
+            color: #333;
+            font-size: 18px;
+            margin: 20px 0 10px 0;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        
+        ul {
+            margin: 10px 0 15px 30px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .highlight {
+            background: #fff3e0;
+            padding: 15px;
+            border-left: 4px solid #FF6B35;
+            margin: 20px 0;
+        }
+        
+        .contact {
+            background: #f5f5f5;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            font-size: 14px;
+            margin-top: 30px;
+            border-top: 1px solid #ddd;
+        }
+        
+        a {
+            color: #FF6B35;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 24px;
+            }
+            
+            h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Privacy Policy</h1>
+            <div class="subtitle">AutoWildcard - Cloudflare Wildcard DNS Setup Tool</div>
+            <div class="subtitle">Last Updated: January 30, 2026</div>
+        </header>
+
+        <section>
+            <h2>1. Introduction</h2>
+            <p>
+                Welcome to AutoWildcard. We respect your privacy and are committed to protecting your personal data. 
+                This privacy policy explains how we collect, use, and safeguard your information when you use our 
+                Android application.
+            </p>
+            <div class="highlight">
+                <strong>Important:</strong> AutoWildcard does NOT collect, store, or transmit your personal data to 
+                any external servers. All data is stored locally on your device with encryption.
+            </div>
+        </section>
+
+        <section>
+            <h2>2. Information We Collect</h2>
+            
+            <h3>2.1 Information You Provide</h3>
+            <ul>
+                <li><strong>Cloudflare Email:</strong> Your Cloudflare account email address</li>
+                <li><strong>Global API Key:</strong> Your Cloudflare Global API Key for authentication</li>
+                <li><strong>Domain Names:</strong> Domain names you want to configure</li>
+                <li><strong>Custom Subdomains:</strong> Optional custom subdomain configurations</li>
+            </ul>
+
+            <h3>2.2 Automatically Collected Information</h3>
+            <ul>
+                <li><strong>FCM Token:</strong> Firebase Cloud Messaging token for push notifications</li>
+                <li><strong>Device Information:</strong> Android version, device model (for compatibility)</li>
+                <li><strong>App Usage:</strong> Basic app usage statistics (locally stored)</li>
+            </ul>
+
+            <h3>2.3 Information We DO NOT Collect</h3>
+            <ul>
+                <li>Personal identification information (name, address, phone number)</li>
+                <li>Location data</li>
+                <li>Contacts or photos</li>
+                <li>Browsing history</li>
+                <li>Financial information</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>3. How We Use Your Information</h2>
+            <p>Your information is used solely for the following purposes:</p>
+            <ul>
+                <li><strong>Authentication:</strong> To authenticate with Cloudflare API using your credentials</li>
+                <li><strong>DNS Configuration:</strong> To setup wildcard DNS for your domains</li>
+                <li><strong>Local Storage:</strong> To save your login credentials for future use (encrypted)</li>
+                <li><strong>Push Notifications:</strong> To send important updates via FCM (optional)</li>
+            </ul>
+            <div class="highlight">
+                <strong>Note:</strong> Your Cloudflare API Key is NEVER sent to our servers. It is only used to 
+                communicate directly with Cloudflare API from your device.
+            </div>
+        </section>
+
+        <section>
+            <h2>4. Data Storage and Security</h2>
+            
+            <h3>4.1 Local Storage</h3>
+            <p>All your data is stored locally on your Android device using:</p>
+            <ul>
+                <li><strong>EncryptedSharedPreferences:</strong> AndroidX Security Crypto library</li>
+                <li><strong>Encryption Method:</strong> AES256-GCM encryption</li>
+                <li><strong>Master Key:</strong> Android Keystore System</li>
+                <li><strong>Storage Location:</strong> /data/data/com.autowildcard/shared_prefs/ (encrypted)</li>
+            </ul>
+
+            <h3>4.2 Security Measures</h3>
+            <ul>
+                <li>End-to-end encryption for sensitive data</li>
+                <li>No data transmission to external servers</li>
+                <li>Secure communication with Cloudflare API (HTTPS only)</li>
+                <li>Auto-cleanup of temporary workers after setup</li>
+                <li>No logging of sensitive information</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>5. Third-Party Services</h2>
+            <p>AutoWildcard uses the following third-party services:</p>
+            
+            <h3>5.1 Cloudflare API</h3>
+            <ul>
+                <li>Used for DNS configuration and domain management</li>
+                <li>Your credentials are sent directly to Cloudflare (not through our servers)</li>
+                <li>Subject to <a href="https://www.cloudflare.com/privacypolicy/" target="_blank">Cloudflare Privacy Policy</a></li>
+            </ul>
+
+            <h3>5.2 Firebase Cloud Messaging (FCM)</h3>
+            <ul>
+                <li>Used for push notifications</li>
+                <li>FCM token is generated automatically by Firebase SDK</li>
+                <li>Subject to <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy Policy</a></li>
+            </ul>
+
+            <h3>5.3 Google AdMob</h3>
+            <ul>
+                <li>Used for displaying advertisements</li>
+                <li>May collect device identifiers for ad personalization</li>
+                <li>Subject to <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>6. Data Retention</h2>
+            <p>
+                Your data is stored on your device until you:
+            </p>
+            <ul>
+                <li>Logout from the app (data is deleted)</li>
+                <li>Uninstall the app (all data is removed)</li>
+                <li>Clear app data from Android settings</li>
+            </ul>
+            <p>
+                We do not retain any data on external servers because we don't collect it in the first place.
+            </p>
+        </section>
+
+        <section>
+            <h2>7. Your Rights</h2>
+            <p>You have the right to:</p>
+            <ul>
+                <li><strong>Access:</strong> View your stored data (locally on your device)</li>
+                <li><strong>Delete:</strong> Remove your data by logging out or uninstalling the app</li>
+                <li><strong>Modify:</strong> Update your credentials anytime</li>
+                <li><strong>Opt-out:</strong> Disable push notifications in Android settings</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>8. Children's Privacy</h2>
+            <p>
+                AutoWildcard is not intended for children under 13 years of age. We do not knowingly collect 
+                personal information from children. If you are a parent or guardian and believe your child has 
+                provided us with personal information, please contact us.
+            </p>
+        </section>
+
+        <section>
+            <h2>9. Changes to This Privacy Policy</h2>
+            <p>
+                We may update this Privacy Policy from time to time. We will notify you of any changes by:
+            </p>
+            <ul>
+                <li>Updating the "Last Updated" date at the top of this policy</li>
+                <li>Sending a push notification (if enabled)</li>
+                <li>Displaying an in-app notice</li>
+            </ul>
+            <p>
+                Your continued use of the app after changes constitutes acceptance of the updated policy.
+            </p>
+        </section>
+
+        <section>
+            <h2>10. Permissions</h2>
+            <p>AutoWildcard requires the following Android permissions:</p>
+            <ul>
+                <li><strong>INTERNET:</strong> To communicate with Cloudflare API</li>
+                <li><strong>ACCESS_NETWORK_STATE:</strong> To check internet connectivity</li>
+                <li><strong>POST_NOTIFICATIONS:</strong> To send push notifications (Android 13+)</li>
+            </ul>
+            <p>We do NOT request unnecessary permissions like camera, contacts, or location.</p>
+        </section>
+
+        <section class="contact">
+            <h2>11. Contact Us</h2>
+            <p>
+                If you have any questions, concerns, or requests regarding this Privacy Policy or your data, 
+                please contact us:
+            </p>
+            <ul>
+                <li><strong>Developer:</strong> AutoFtbot69</li>
+                <li><strong>App Name:</strong> AutoWildcard</li>
+                <li><strong>Version:</strong> 0.0.3</li>
+                <li><strong>Support:</strong> Via app reviews or developer contact</li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 AutoWildcard. All rights reserved.</p>
+            <p>Developed by AutoFtbot69</p>
+        </footer>
+    </div>
+</body>
+</html>
