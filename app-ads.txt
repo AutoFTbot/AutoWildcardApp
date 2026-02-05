@@ -1,0 +1,4 @@
+# app-ads.txt for AutoWildcard App
+# Publisher ID: pub-7156891883785914
+
+google.com, pub-7156891883785914, DIRECT, f08c47fec0942fa0
