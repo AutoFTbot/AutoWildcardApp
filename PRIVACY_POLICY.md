@@ -98,8 +98,8 @@ This app is available worldwide. By using the app, you consent to the transfer o
 
 If you have questions about this Privacy Policy, please contact us:
 
-- **Email**: [your-email@example.com]
-- **GitHub**: [https://github.com/yourusername/autowildcard]
+- **Email**: [support@autoftbot.com]
+- **GitHub**: [https://github.com/AutoFTbot/AutoWildcardApp]
 
 ## Legal Compliance
 
